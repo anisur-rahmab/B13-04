@@ -1,4 +1,4 @@
-
+// full js code here 
 let interList = [];
 let rejectList = [];
 let currentStatus = 'all';
@@ -11,21 +11,16 @@ const allBtn = document.getElementById('all-btn');
 const interviewBtn = document.getElementById('interview-btn');
 const rejectedBtn = document.getElementById('rejected-btn');
 
-
 const avilableJovCount = document.getElementById('available-job-count');
 const deleteBtn = document.querySelectorAll('#delete-btn');
 
 const allCards = document.getElementById('allcards');
 const filterCard = document.getElementById('filter-card');
 
-
-
 function count() {
   interCount.innerText = interList.length;
   rejectCount.innerText = rejectList.length;
 }
-
-
 
 function toggleStyle(id) {
   allBtn.classList.remove('bg-blue-500');
@@ -58,7 +53,6 @@ function toggleStyle(id) {
 
 }
 
-
 const mainContainer = document.querySelector('main');
 
 mainContainer.addEventListener('click', function (event){
@@ -72,7 +66,6 @@ mainContainer.addEventListener('click', function (event){
     const notes = parenNode.querySelector('.notes').innerText;
 
     parenNode.querySelector('.status').innerText = 'INTERVIEW';
-
 
     const fullInfo = {
       companyName, 
@@ -108,7 +101,6 @@ mainContainer.addEventListener('click', function (event){
 
     parenNode.querySelector('.status').innerText = 'REJECTED';
 
-
     const fullInfo = {
       companyName, 
       postName, 
@@ -117,9 +109,7 @@ mainContainer.addEventListener('click', function (event){
       notes
     };
 
-  
     const exitCompanyName = rejectList.find(item => item.companyName === fullInfo.companyName);
-    
     
     if(!exitCompanyName) {
       rejectList.push(fullInfo);
@@ -134,8 +124,6 @@ mainContainer.addEventListener('click', function (event){
     count();
   }
  
-
-  
 });
 
 
