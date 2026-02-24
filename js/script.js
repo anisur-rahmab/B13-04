@@ -185,10 +185,6 @@ function renderRejected() {
   }
 }
 
-
-
-
-
 deleteBtn.forEach(btn => {
   btn.addEventListener('click', function() {
     alert('are you sure?');
@@ -199,15 +195,6 @@ deleteBtn.forEach(btn => {
 });
 
 
-// buttons.forEach(button => {
-//   button.addEventListener('click', () => {
-//     buttons.forEach(btn => {
-//       btn.classList.remove('bg-blue-500');
-//     })
-//     button.classList.add('bg-blue-500');
-//   });
-  
-// });
 
 
 
